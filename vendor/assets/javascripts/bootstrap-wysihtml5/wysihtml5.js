@@ -5071,16 +5071,22 @@ wysihtml5.dom.parse = (function() {
         return attributeValue.replace(REG_EXP, "");
       };
     })(),
-    
+
     numbers: (function() {
       var REG_EXP = /\D/g;
       return function(attributeValue) {
         attributeValue = (attributeValue || "").replace(REG_EXP, "");
         return attributeValue || null;
       };
+    })(),
+
+    any: (function() {
+      return function(attributeValue) {
+        return attributeValue;
+      };
     })()
   };
-  
+
   // ------------ class converter (converts an html attribute to a class name) ------------ \\
   var addClassMethods = {
     align_img: (function() {
