@@ -1,6 +1,7 @@
 /**
- * @license wysihtml5 v0.3.0
+ * @license wysihtml5 v0.3.0.1em
  * https://github.com/xing/wysihtml5
+ * https://github.com/maslenkov/bootstrap-wysihtml5-rails/blob/0.3.1.24/vendor/assets/javascripts/bootstrap-wysihtml5/wysihtml5.js
  *
  * Author: Christopher Blum (https://github.com/tiff)
  *
@@ -9,8 +10,8 @@
  *
  */
 var wysihtml5 = {
-  version: "0.3.0",
-  
+  version: "0.3.0.1em",
+
   // namespaces
   commands:   {},
   dom:        {},
