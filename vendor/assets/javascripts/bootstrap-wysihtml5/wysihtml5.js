@@ -1,5 +1,5 @@
 /**
- * @license wysihtml5 v0.3.0.1em
+ * @license wysihtml5 v0.3.0.2em
  * https://github.com/xing/wysihtml5
  * https://github.com/maslenkov/bootstrap-wysihtml5-rails/blob/0.3.1.24/vendor/assets/javascripts/bootstrap-wysihtml5/wysihtml5.js
  *
