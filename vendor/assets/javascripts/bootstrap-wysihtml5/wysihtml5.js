@@ -5043,14 +5043,27 @@ wysihtml5.dom.parse = (function() {
       }
     }
   }
-  
+
   function _handleText(oldNode) {
     return oldNode.ownerDocument.createTextNode(oldNode.data);
   }
-  
-  
+
+
   // ------------ attribute checks ------------ \\
   var attributeCheckMethods = {
+    href: (function() {
+      console.log('href');
+      var REG_EXP = /^https?:\/\/|mailto:/i;
+      return function(attributeValue) {
+        if (!attributeValue || !attributeValue.match(REG_EXP)) {
+          return null;
+        }
+        return attributeValue.replace(REG_EXP, function(match) {
+          return match.toLowerCase();
+        });
+      };
+    })(),
+
     url: (function() {
       var REG_EXP = /^https?:\/\//i;
       return function(attributeValue) {
